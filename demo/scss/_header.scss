@@ -1,0 +1,59 @@
+.heading{
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.heading-container {
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap : 0 40px;
+    list-style: none;
+    &-link{
+        font-size: 1.6rem;
+        color: inherit;
+        position: relative;
+        transition: color .2s linear;
+
+    }
+    &-link:after{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 3px;
+        background-color: $primary-color;
+        transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    &-link:hover{
+        color: $primary-color;
+    }
+    &-link:hover:after{
+        width: 100%;
+        left: 0;
+        right: auto;
+    }
+}
+
+.heading-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 30px;
+    &-signin{
+        color: $heading-color;
+        font-weight: 700;
+        background-color: #fff;
+        border: none;
+        font-size: 1.6rem;
+    }
+}
+

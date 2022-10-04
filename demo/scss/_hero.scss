@@ -1,0 +1,36 @@
+.hero-container{
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    position: relative;
+    margin-bottom: 120px;
+}
+.hero-content{
+
+    max-width: 555px;
+    &-heading{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: calc(70 / 50);
+        color: $heading-color;
+        margin-bottom: 20px;
+        strong{
+            font-weight: 700;
+        }
+    }
+    &-info{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: calc(30 / 16 );
+        margin-bottom: 50px;
+        strong{
+            font-weight: 700;
+        }
+    }
+}
+.hero-image{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(40px, -50%);
+}

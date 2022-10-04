@@ -1,0 +1,42 @@
+.illustration{
+    margin-bottom: 130px;
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 170px;
+        position: relative;
+    }
+    &-content{
+        position: absolute;
+        right: 0;
+        top: 34px;
+        width: calc(50% - 110px);
+        transform: translateX(12px);
+
+    }
+    &-img{
+        transform: translateX(50px);
+    }
+    &-heading{
+        max-width: 400px;
+    }
+    &-desc{
+        margin-bottom: 23px;
+    }
+    &-list{
+        list-style: none;
+        padding-left: 0;
+    }
+    &-items{
+        display: flex;
+        align-items: center;
+        gap: 0 10px ;
+        font-size: 14px;
+        margin-bottom: 21px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
